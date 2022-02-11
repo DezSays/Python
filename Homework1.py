@@ -14,7 +14,7 @@
 
 
 # Small Question 3: MADLIB
-# greeting = "Please fill in the blanks below:\n_____(name)_____'s favorite subject in school is _____(subject)_____"
+# greeting = "Please fill in the blanks below:\n____(name)____'s favorite subject in school is ____(subject)____"
 # print(greeting)
 # name = input('What is the name you would like to use? ')
 # subject = input('What is the subject you would like to use? ')
@@ -41,6 +41,8 @@
 #     print('Friday')
 # elif day==6:
 #     print('Saturday')
+# else:
+#     print("Please enter a valid number")
 
 
 
@@ -64,23 +66,26 @@
 #     print('Go to work')
 # elif day==6:
 #     print('Sleep in')
+# else:
+#     print("Entry invalid, please try again")
 
 
 
 # Small Question 6. Celsius to Fahrenheit
 
-# C = float(input("Enter temperature in Celsius "))
+# C = int(input("Enter temperature in Celsius "))
 # F = (C * 9/5) + 32;
-# print('%0.1f degree Celsius is equal to %0.1f degree Fahrenheit' %(C, F))
+# print(F)
 
 
 
 # Small Question 7. Looping from 1 to 10
 
-# a = 1
-# while a <= 10:
-#     print(a)
-#     a += 1
+# a = 0
+# while a < 10:
+#   a += 1  
+#   print(a)
+    
 
 
 
@@ -97,6 +102,15 @@
 #     MIN += 1
 
 
+# Small Question 9. Print a Square
+
+
+# height = 5
+# for i in range(height,0,-1):
+#     print('*' * 5)
+
+
+# Small Question 10
 
 
 
@@ -105,9 +119,52 @@
 
 
 
+# Medium Question 1. Tip Calculator
+
+# 1. Tip Calculator
+
+# bill = float(input('Total bill amount? $'))
+# print("$%.2f" % bill)
+
+# service = input("""
+#                 Level of service? 
+                
+#                 Good
+#                 Fair
+#                 Bad
+                
+#                 """)
+
+# # total = bill + (bill * service)
+
+# if service.lower() == 'good':
+#     tip = (bill * 0.2)
+#     total = bill + tip
+#     print("Tip amount: $%.2f" % tip)
+#     print("Total amount: $%.2f" % total)
+# elif service.lower() == 'fair':
+#     tip = (bill * 0.15)
+#     total = bill + tip
+#     print("Tip amount: $%.2f" % tip)
+#     print("Total amount: $%.2f" % total)
+# elif service.lower() == 'bad':
+#     tip = (bill * 0.1)
+#     total = bill + tip
+#     print("Tip amount: $%.2f" % tip)
+#     print("Total amount: $%.2f" % total)
+# else:
+#     print('Please enter a valid service level ')
 
 
 
+
+
+
+# Medium Question 6. Multiplication Table
+
+# number = int(input("Enter the number you would like to print the multiplication table of: "))    
+# for v in range(1,11):
+#     print(number,'*',v,'=',v*number)
 
 
 
